@@ -1,0 +1,27 @@
+{
+	"info": {
+		"_postman_id": "e9f0ccc4-5c76-4aea-bd29-eec8991c486c",
+		"name": "API-POSTMAN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18466768"
+	},
+	"item": [
+		{
+			"name": "https://postman-echo.com",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postman-echo.com",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					]
+				},
+				"description": "curso-postman"
+			},
+			"response": []
+		}
+	]
+}

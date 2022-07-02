@@ -1,0 +1,274 @@
+{
+	"info": {
+		"_postman_id": "c18b003e-aba1-4c88-86ef-f516cca060be",
+		"name": "Portal Digital Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18466768"
+	},
+	"item": [
+		{
+			"name": "Predicado",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apihml-v3-tribanco.sensedia.com/clientes/pf/predicado/v2/opt_in/10909486620",
+					"protocol": "https",
+					"host": [
+						"apihml-v3-tribanco",
+						"sensedia",
+						"com"
+					],
+					"path": [
+						"clientes",
+						"pf",
+						"predicado",
+						"v2",
+						"opt_in",
+						"10909486620"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Campanha CPF",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Postman-Token",
+						"value": "cd42089e-023c-4d65-a514-292786de7da1"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "client_id",
+						"value": "594ddbf8-5784-3a6a-8aca-bc4e905eb6a8"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://apihml-v3-tribanco.sensedia.com/sgpd/campanha-cpf/cpf/10909486620",
+					"protocol": "https",
+					"host": [
+						"apihml-v3-tribanco",
+						"sensedia",
+						"com"
+					],
+					"path": [
+						"sgpd",
+						"campanha-cpf",
+						"cpf",
+						"10909486620"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "conta",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Postman-Token",
+						"value": "24a71cf4-3c4a-41c6-8a09-7946852c8dac"
+					},
+					{
+						"key": "X-Access-Key",
+						"value": "{a6b6c5a7-c987-4e1f-a8fe-e72854d996b2}"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://trbbigdsh.tribanco.com.br/mtr-api-hml/sdconta/api/v2/contas?inscricao=03231860253&tipoPessoa=F",
+					"protocol": "https",
+					"host": [
+						"trbbigdsh",
+						"tribanco",
+						"com",
+						"br"
+					],
+					"path": [
+						"mtr-api-hml",
+						"sdconta",
+						"api",
+						"v2",
+						"contas"
+					],
+					"query": [
+						{
+							"key": "inscricao",
+							"value": "03231860253"
+						},
+						{
+							"key": "tipoPessoa",
+							"value": "F"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "campanha-cpf",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "668e271f-45be-4847-818b-fe90ddc9c52b"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "client_id",
+						"value": "594ddbf8-5784-3a6a-8aca-bc4e905eb6a8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"idCampanhaCpf\": 7908,\n    \"campanhaDto\": {\n       \"idCampanha\": 135\n   },\n   \"vlCpf\": \"56762073026\",\n   \"dtAnalise\": \"2019-11-26T03:45:00.000+0000\",\n   \"vlLimite\": 3000,\n   \"dtUltModificacao\": \"2019-11-26T20:42:20.000+0000\",\n   \"flCampanhaAplicada\": \"N\"\n}"
+				},
+				"url": {
+					"raw": "https://apihml-v3-tribanco.sensedia.com/sgpd/campanha-cpf",
+					"protocol": "https",
+					"host": [
+						"apihml-v3-tribanco",
+						"sensedia",
+						"com"
+					],
+					"path": [
+						"sgpd",
+						"campanha-cpf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IncluirDinheiro",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "access_token",
+						"value": "59c2e4fe-972e-3e6b-b728-fee5c596c25c"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "client_id",
+						"value": "147beea2-d74d-324d-a88d-7fa76ccfe005"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "96fc0ef3-f673-5dd0-2953-e5ec3eaa1046"
+					},
+					{
+						"key": "x-access-key",
+						"value": "f93f74a5-4339-4771-b4c9-9d12ae5566d9"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"nomeUsuario\": \"SDBANCO\",\n   \"nomeSistema\": \"SDCONTA2\",\n   \"lancamentos\": [\n       {\n           \"agencia\": 1,\n           \"conta\": 2293188,\n           \"data\": \"2020-10-23\",\n           \"historico\": 8752,\n           \"complementoHistorico\": \"Incremento Saldo\",\n           \"valor\": 2000.00,\n           \"documento\": 0,\n           \"referenciaMovimento\": \"S\",\n           \"exibirLancamentosAgrupados\": true,\n           \"validarSaldo\": true,\n           \"tipoLimite\": 0,\n           \"detalhes\": \"Detalhes\"\n       }\n   ]\n}"
+				},
+				"url": {
+					"raw": "https://apihml-v3-tribanco.sensedia.com/matera/banco/v1/conta/lancamento",
+					"protocol": "https",
+					"host": [
+						"apihml-v3-tribanco",
+						"sensedia",
+						"com"
+					],
+					"path": [
+						"matera",
+						"banco",
+						"v1",
+						"conta",
+						"lancamento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IncluirCampanha",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "6e460926-ca7b-4304-8be4-47e227472e0d"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "client_id",
+						"value": "594ddbf8-5784-3a6a-8aca-bc4e905eb6a8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"campanhaDto\": {\n        \"idCampanha\": 135\n    },\n    \"vlCpf\": \"56762073026\",\n    \"dtAnalise\": \"2019-07-22T03:45:00.000+0000\",\n    \"vlLimite\": 3000,\n    \"dtUltModificacao\": \"2019-07-22T03:45:00.000+0000\",\n    \"flCampanhaAplicada\": \"N\",\n    \"dtVencimento\":\"2020-06-30T03:45:00.000+0000\"\n}\t"
+				},
+				"url": {
+					"raw": "https://apihml-v3-tribanco.sensedia.com/sgpd/campanha-cpf",
+					"protocol": "https",
+					"host": [
+						"apihml-v3-tribanco",
+						"sensedia",
+						"com"
+					],
+					"path": [
+						"sgpd",
+						"campanha-cpf"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

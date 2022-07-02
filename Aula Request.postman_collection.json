@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "55d16648-0cee-42cc-ac93-f4b966a175e0",
+		"name": "Aula Request",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18466768"
+	},
+	"item": [
+		{
+			"name": "https://gorest.co.in/public/v2/users? - https://gorest.co.in",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "https://gorest.co.in/my-account/access-tokens",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 3547,\r\n    \"name\": \"Rep. Kanishka Kakkar\",\r\n    \"email\": \"rep_kanishka_kakkar@quigley.info\",\r\n    \"gender\": \"female\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users?email=rep_kanishka_kakkar@quigley.info",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "rep_kanishka_kakkar@quigley.info"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "comentarios - https://gorest.co.in/public/v2/posts/9/comments",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":11,\"post_id\":9,\"name\":\"Adheesh Nambeesan\",\"email\":\"nambeesan_adheesh@zieme.com\",\"body\":\"Odio labore porro. Ad incidunt eos. Ut sequi nulla.\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/posts/9/comments?=post_id\": 9",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"posts",
+						"9",
+						"comments"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "post_id\": 9"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "comentarios - https://gorest.co.in/public/v2/posts/9/comments",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "2da8487a7118d05827debb1d76c2560df1d94c124193f32112826084bcbae593",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 11,\r\n    \"post_id\": 9,\r\n    \"name\": \"Lucas Nathan\",\r\n    \"email\": \"nambeesan_adheesh@zieme.com\",\r\n    \"body\": \"Odio labore porro. Ad incidunt eos. Ut sequi nulla.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/posts/9/comments",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"posts",
+						"9",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete -  https://gorest.co.in/public/v2/posts/9/comments",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "2da8487a7118d05827debb1d76c2560df1d94c124193f32112826084bcbae593",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 3543,\r\n    \"name\": \"Aatmaja Nayar\",\r\n    \"email\": \"nayar_aatmaja@hoeger-labadie.name\",\r\n    \"gender\": \"male\",\r\n    \"status\": \"inactive\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/Aatmaja Nayar",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"Aatmaja Nayar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

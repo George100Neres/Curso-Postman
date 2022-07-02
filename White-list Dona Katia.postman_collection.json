@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "2dc14dd7-cc53-4a93-8254-46310b68f855",
+		"name": "White-list Dona Katia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18466768"
+	},
+	"item": [
+		{
+			"name": "https://apihml-v3-tribanco.sensedia.com/sgpd/campanha-cpf",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "eee1f2f3-c71d-4927-ad1f-a7ce4a4280ca"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "client_id",
+						"value": "594ddbf8-5784-3a6a-8aca-bc4e905eb6a8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"campanhaDto\": {\n        \"idCampanha\": 97\n    },\n    \"vlCpf\": \"73480150349\",\n    \"dtAnalise\": \"2019-07-22T03:45:00.000+0000\",\n    \"vlLimite\": 3800,\n    \"dtUltModificacao\": \"2019-10-22T03:45:00.000+0000\",\n    \"flCampanhaAplicada\": \"N\",\n    \"dtVencimento\":\"2019-12-27T03:45:00.000+0000\"\n}              "
+				},
+				"url": {
+					"raw": "https://apihml-v3-tribanco.sensedia.com/sgpd/campanha-cpf",
+					"protocol": "https",
+					"host": [
+						"apihml-v3-tribanco",
+						"sensedia",
+						"com"
+					],
+					"path": [
+						"sgpd",
+						"campanha-cpf"
+					]
+				},
+				"description": "Generated from a curl request: \ncurl -X POST \\\n  https://apihml-v3-tribanco.sensedia.com/sgpd/campanha-cpf \\\n  -H 'Content-Type: application/json' \\\n  -H 'Postman-Token: eee1f2f3-c71d-4927-ad1f-a7ce4a4280ca' \\\n  -H 'cache-control: no-cache' \\\n  -H 'client_id: 594ddbf8-5784-3a6a-8aca-bc4e905eb6a8' \\\n  -d '{\n    \\\"campanhaDto\\\": {\n        \\\"idCampanha\\\": 97\n    },\n    \\\"vlCpf\\\": \\\"45912296024\\\",\n    \\\"dtAnalise\\\": \\\"2019-07-22T03:45:00.000+0000\\\",\n    \\\"vlLimite\\\": 3800,\n    \\\"dtUltModificacao\\\": \\\"2019-07-22T03:45:00.000+0000\\\",\n    \\\"flCampanhaAplicada\\\": \\\"N\\\",\n    \\\"dtVencimento\\\":\\\"2019-12-27T03:45:00.000+0000\\\"\n}              '\n"
+			},
+			"response": []
+		},
+		{
+			"name": "CPF na Whitelist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "client_id",
+						"value": "594ddbf8-5784-3a6a-8aca-bc4e905eb6a8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"campanhaDto\": {\n        \"idCampanha\": 54\n    },\n    \"vlCpf\": \"01345725213\",\n    \"dtAnalise\": \"2020-01-31T15:00:00.000+0000\",\n    \"vlLimite\": 0,\n    \"flCampanhaAplicada\": \"N\",\n    \"dtVencimento\": \"2030-12-31T00:00:00.000+0000\"\n}"
+				},
+				"url": {
+					"raw": "https://apihml-v3-tribanco.sensedia.com/sgpd/campanha-cpf",
+					"protocol": "https",
+					"host": [
+						"apihml-v3-tribanco",
+						"sensedia",
+						"com"
+					],
+					"path": [
+						"sgpd",
+						"campanha-cpf"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

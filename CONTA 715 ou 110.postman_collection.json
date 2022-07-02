@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "384efab9-c7bf-4f0e-bf39-cba5f303b52d",
+		"name": "CONTA 715 ou 110",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18466768"
+	},
+	"item": [
+		{
+			"name": "CPF conta 110 ou 715",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "client_id",
+						"value": "594ddbf8-5784-3a6a-8aca-bc4e905eb6a8"
+					},
+					{
+						"key": "x-access-key",
+						"value": "{a6b6c5a7-c987-4e1f-a8fe-e72854d996b2}"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "inscricao",
+							"value": "03348736498",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apihml-v3-tribanco.sensedia.com/matera/conta-corrente/v1/v2/contas?inscricao=03348736498&tipoPessoa=F",
+					"protocol": "https",
+					"host": [
+						"apihml-v3-tribanco",
+						"sensedia",
+						"com"
+					],
+					"path": [
+						"matera",
+						"conta-corrente",
+						"v1",
+						"v2",
+						"contas"
+					],
+					"query": [
+						{
+							"key": "inscricao",
+							"value": "03348736498"
+						},
+						{
+							"key": "tipoPessoa",
+							"value": "F"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,576 @@
+{
+	"info": {
+		"_postman_id": "df785f44-99c5-4173-85b8-4f1765e80b15",
+		"name": "Edu_testes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18466768"
+	},
+	"item": [
+		{
+			"name": "Randoom",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:54111/api/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "54111",
+							"path": [
+								"api",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:54111/api/clientes?nome=coco",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "54111",
+							"path": [
+								"api",
+								"clientes"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "coco"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:54111/api/clientes?nome=lula",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "54111",
+							"path": [
+								"api",
+								"clientes"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "lula"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SCHOOL",
+			"item": [
+				{
+					"name": "Get_All_Aluno",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/aluno",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"aluno"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_By_Id_Aluno",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/aluno/byId/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"aluno",
+								"byId",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post_Aluno",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"nome\": \"Valente\",\r\n        \"sobrenome\": \"Arruda\",\r\n        \"telefone\": \"345345\",\r\n        \"alunosDisciplinas\": null\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/aluno",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"aluno"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT_Aluno",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "        {\r\n        \"id\": 10, \r\n        \"nome\": \"Gilvaneza\",\r\n        \"sobrenome\": \"Kdela\",\r\n        \"telefone\": \"9990005\"\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/aluno/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"aluno",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete_Aluno",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/aluno/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"aluno",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_All_Professores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/professor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"professor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_ById_Professor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/professor/byId/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"professor",
+								"byId",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST_Professor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Bolsonaro\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/professor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"professor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT_Professor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "      {\r\n        \"id\": 6,\r\n        \"nome\": \"kchorro\"\r\n      } ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/professor/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"professor",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete_Professor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/professor/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"professor",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GET_Inmetrics",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "automacao",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "inmetrics",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://inm-api-test.herokuapp.com/empregado/list_all",
+					"protocol": "https",
+					"host": [
+						"inm-api-test",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"empregado",
+						"list_all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST_Inmetrics",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "automacao",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "inmetrics",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"admissao\": \"07/02/1998\",\r\n     \"cargo\": \"Desenvolvedor de Automacao\",\r\n     \"comissao\": \"3.000,00\",\r\n     \"cpf\": \"065.874.598-71\",\r\n     \"departamentoId\": 1,\r\n     \"nome\": \"Aguinaldo\",\r\n     \"salario\": \"1.000,00\",\r\n     \"sexo\": \"i\",\r\n     \"tipoContratacao\": \"clt\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://inm-api-test.herokuapp.com/empregado/cadastrar",
+					"protocol": "https",
+					"host": [
+						"inm-api-test",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"empregado",
+						"cadastrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT_Inmetrics",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "automacao",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "inmetrics",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"admissao\": \"07/02/2000\",\r\n     \"cargo\": \"Desenvolvedor de Automacao EDITADO\",\r\n     \"comissao\": \"4.000,00\",\r\n     \"cpf\": \"065.874.598-71\",\r\n     \"departamentoId\": 1,\r\n     \"nome\": \"Aguinaldo EDITADO\",\r\n     \"salario\": \"1.000,00\",\r\n     \"sexo\": \"i\",\r\n     \"tipoContratacao\": \"clt\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://inm-api-test.herokuapp.com/empregado/alterar/17436",
+					"protocol": "https",
+					"host": [
+						"inm-api-test",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"empregado",
+						"alterar",
+						"17436"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_BY_ID_Inmetrics",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "automacao",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "inmetrics",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://inm-api-test.herokuapp.com/empregado/list/17436",
+					"protocol": "https",
+					"host": [
+						"inm-api-test",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"empregado",
+						"list",
+						"17436"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE_Inmetrics",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "automacao",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "inmetrics",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://inm-api-test.herokuapp.com/empregado/deletar/79",
+					"protocol": "https",
+					"host": [
+						"inm-api-test",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"empregado",
+						"deletar",
+						"79"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

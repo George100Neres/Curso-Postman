@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "79d74877-f3d3-4784-a8f5-8f04b4ec5bfc",
+		"name": "Aula 2411",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18466768"
+	},
+	"item": [
+		{
+			"name": "Lista TOdos os Funcionarios",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://inm-api-test.herokuapp.com/empregado/list_all",
+					"protocol": "https",
+					"host": [
+						"inm-api-test",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"empregado",
+						"list_all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista Funcionarios por ID",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "Inmetrics",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "automacao",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://inm-api-test.herokuapp.com/empregado/list/188",
+					"protocol": "https",
+					"host": [
+						"inm-api-test",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"empregado",
+						"list",
+						"188"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastro de Funcioanrios",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"admissao\": \"07/02/1998\",\r\n     \"cargo\": \"Desenvolvedor de Automacao\",\r\n     \"comissao\": \"3.000,00\",\r\n     \"cpf\": \"065.874.598-71\",\r\n     \"departamentoId\": 1,\r\n     \"nome\": \"Aguinaldo\",\r\n     \"salario\": \"1.000,00\",\r\n     \"sexo\": \"i\",\r\n     \"tipoContratacao\": \"clt\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://inm-api-test.herokuapp.com/empregado/cadastrar",
+					"protocol": "https",
+					"host": [
+						"inm-api-test",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"empregado",
+						"cadastrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastro de Funcioanrios Copy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "Inmetrics",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "automacao",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"admissao\": \"07/02/1998\",\r\n     \"cargo\": \"Administrador\",\r\n     \"comissao\": \"5.000,00\",\r\n     \"cpf\": \"065.874.598-71\",\r\n     \"departamentoId\": 1,\r\n     \"nome\": \"Gabriela\",\r\n     \"salario\": \"1.000,00\",\r\n     \"sexo\": \"i\",\r\n     \"tipoContratacao\": \"clt\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://inm-api-test.herokuapp.com/empregado/alterar/17436",
+					"protocol": "https",
+					"host": [
+						"inm-api-test",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"empregado",
+						"alterar",
+						"17436"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
